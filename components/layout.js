@@ -4,18 +4,17 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Footer from "../components/footer"
 import Header from "../components/header"
-export const { title } = "Test"
-
 
 export const name = 'Cricket Blender'
-export const siteTitle = 'Cricket Blender Website'
+export const siteTitle = 'Cricket Blender'
 export const filler = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-export default function Layout({ children, nofooter, noheader, nosidenav, nohome}) {
+export default function Layout({ children, title, nofooter, noheader, nosidenav, nohome}) {
   return (
       <>
     <div className={styles.container}>
       <Head>
+      
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
@@ -32,11 +31,10 @@ export default function Layout({ children, nofooter, noheader, nosidenav, nohome
       </Head>
 
       {!noheader ? (
-          <Header />
+          <Header title={title}/>
         ):
 
         (<></>)}
-        
       
       <main>{children}</main>
 

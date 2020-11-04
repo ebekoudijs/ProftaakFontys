@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import Layout, { siteTitle, filler } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-const titel = "Titel"
+const pageTitle = "INDEX"
 
 export default function Home() {
   return (
-    <Layout nohome>
+    <Layout nohome title={pageTitle}>
       <Head>
-        <title>{siteTitle}</title>
+        <title>{siteTitle} | {pageTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
         <p>{filler}</p>
