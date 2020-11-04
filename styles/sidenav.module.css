@@ -1,11 +1,33 @@
-.error {
+.navbar {
     position: fixed;
     background-color: lightgray;
     width: 275px;
     top: 0px;
-    left: 0px;
     height: 100vh;
     overflow-wrap: break-word;
     margin-top: 0px;
     padding: 0px;
+    display: block; 
+    text-decoration: none;
+}
+.navitem {
+    display: block;
+    font-size: 2rem;
+}
+.navitem:hover {
+    background-color: yellow;
+
+}
+.navitemcontainer {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.05rem;
+}
+.logocontainer {
+    height: 180px;
+
+}
+.navitemtext {
+    width: 100%;
 }

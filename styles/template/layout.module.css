@@ -24,12 +24,10 @@
 .contentwrapper {
 width: calc(100% - 275px);
 margin-left: 275px;
-background-color: blue;
 }
 .content {
-    margin: auto;
+    margin-left: 10%;
     width: 50%;
-    border: 3px solid green;
     padding: 10px;
 }
 

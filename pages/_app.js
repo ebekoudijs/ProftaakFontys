@@ -3,6 +3,7 @@ import Head from 'next/head'
 export default function App({ Component, pageProps }) {
     return (
         <>
+            {/* 
             <Head>
                 <link 
                     rel="stylesheet" 
@@ -22,6 +23,7 @@ export default function App({ Component, pageProps }) {
                     crossorigin="anonymous"
                     />
             </Head>
+            */} 
             <Component {...pageProps}/>
         </>
     );
