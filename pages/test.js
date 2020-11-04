@@ -1,14 +1,18 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import Layout from '../components/layout'
+import Layout, {filler} from '../components/layout'
+import utilStyles from '../styles/utils.module.css'
 
 export default function FirstPost() {
   return (
-    <Layout>
+    <>
+    <Layout header footer>
       <Head>
-        <title>Test</title>
       </Head>
-      <h1>First Post</h1>
-    </Layout>
+        <section className={utilStyles.headingMd}>
+        <p>{filler}</p>
+      </section>
+    </Layout> 
+    </>
   )
 }

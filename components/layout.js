@@ -2,12 +2,18 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Footer from "../components/footer"
+import Header from "../components/header"
+export const { title } = "Test"
 
-const name = 'Cricket Blender'
+
+export const name = 'Cricket Blender'
 export const siteTitle = 'Cricket Blender Website'
+export const filler = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, nofooter, noheader, nosidenav, nohome}) {
   return (
+      <>
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -25,37 +31,16 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <img
-              src="/images/cat.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/cat.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
+      {!noheader ? (
+          <Header />
+        ):
+
+        (<></>)}
+        
+      
       <main>{children}</main>
-      {!home && (
+
+      {!nohome && (
         <div className={styles.backToHome}>
           <Link href="/">
             <a>← Back to home</a>
@@ -63,5 +48,12 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
+    {!nofooter ? (<Footer />)
+    :
+        (
+//manier vinden voor lege return
+<></>)
+}
+    </>
   )
 }
