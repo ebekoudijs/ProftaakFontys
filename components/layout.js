@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Footer from "../components/footer"
 import Header from "../components/header"
+import Sidenav from "../components/sidenav"
 
 export const name = 'Cricket Blender'
 export const siteTitle = 'Cricket Blender'
@@ -35,7 +36,11 @@ export default function Layout({ children, title, nofooter, noheader, nosidenav,
         ):
 
         (<></>)}
-      
+      {!nosidenav ? (
+        <Sidenav />
+        ) :
+                  (<></>)}
+
       <main>{children}</main>
 
       {!nohome && (

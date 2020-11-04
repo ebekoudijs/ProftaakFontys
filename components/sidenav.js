@@ -1,9 +1,7 @@
-import 
-
-export default function Footer() {
+export default function Sidenav() {
   return (
     <div>
-      <h1>Sidenavr</h1>
+      <h1>Insert code voor sidenav</h1>
     </div>
   );
 }

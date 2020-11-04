@@ -12,7 +12,7 @@ export default function Home() {
       <section className={utilStyles.headingMd}>
         <p>{filler}</p>
         <p>{filler}</p>
-          <a href="/test">testpagina</a>
+        <a href="/test">testpagina</a>
       </section>
     </Layout>
   )
