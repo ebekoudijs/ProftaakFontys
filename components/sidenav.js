@@ -1,4 +1,4 @@
-﻿import styles from '../styles/sidenav.module.css'
+﻿import styles from '../styles/sidenav.module.scss'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
@@ -7,46 +7,24 @@ import Link from 'next/link'
 
 export default function Sidenav() {
   return (
-      <div className={styles.navbar}>
-          
-          <div className={styles.logocontainer}>
-              <h1>Grasshopper company</h1>
+      <div class={styles.navbar}>
+          <div class={styles.logo}>
+              Vieze insecten proftaak
           </div>
-          <div className={styles.navitemcontainer}>
-              <ul>
-                  <li>
-                  <div className={styles.navitem}>
-                      <Link href="/">
-                        <a>← Home</a>
-                          </Link>
-                          <hr className={utilStyles.divider}></hr>
-                      </div>
-                  </li>
-                  <div className={styles.navitem}>
-                      <li>
-                          <Link href="/about">
-                              <a>← About</a>
-                          </Link>
-                          <hr className={utilStyles.divider}></hr>
-                      </li>
-                  </div>
-                  <div className={styles.navitem}>
-                      <li>
-                          <Link href="/pagetemplate">
-                              <a>← Template</a>
-                          </Link>
-                          <hr className={utilStyles.divider}></hr>
-                      </li>
-                  </div>
-                  <div className={styles.navitem}>
-                      <li>
-                          <Link href="/contact">
-                              <a>← Contact</a>
-                          </Link>
-                      </li>
-                  </div>
-                </ul>
-           </div>
+          <div class="menu">
+              <a href="#" class={styles.link}>
+                  <div class="title">About</div>
+                  <div class="bar"></div>
+              </a>
+              <a href="#" class={styles.link}>
+                  <div class="title">Work</div>
+                  <div class="bar"></div>
+              </a>
+              <a href="#" class={styles.link}>
+                  <div class="title">Contact</div>
+                  <div class="bar"></div>
+              </a>
+          </div>
       </div>
   );
 }

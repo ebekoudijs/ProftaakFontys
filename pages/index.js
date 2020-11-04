@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <Layout nohome title={pageTitle}>
+    <Layout nohome noheader title={pageTitle}>
       <section className={utilStyles.headingMd}>
         <p>{filler}</p>
               <p>{filler}</p>
