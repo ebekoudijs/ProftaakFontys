@@ -27,7 +27,9 @@ margin-left: 275px;
 background-color: blue;
 }
 .content {
-
-
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
 }
 

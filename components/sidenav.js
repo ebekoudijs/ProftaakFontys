@@ -1,5 +1,7 @@
-import styles from '../styles/sidenav.module.css'
+﻿import styles from '../styles/sidenav.module.css'
 import utilStyles from '../styles/utils.module.css'
+import Link from 'next/link'
+
 
 
 
@@ -12,17 +14,28 @@ export default function Sidenav() {
           </div>
           <div className={styles.links}>
               <ul>
-                  <li><a href="/about">
-                      About</a>
-                         About</li>
-                  <li><a href="/">
-                      Index</a>
-   Index</li>
-                  <li><a href="/pagetemplate">
-                      Pagetemplate</a>
-   pagetemplate</li>
-              </ul>
-          </div>
+                  <li>
+                    <Link href="/">
+                      <a>← Home</a>
+                    </Link>
+                  </li>
+                  <li>
+                      <Link href="/about">
+                          <a>← About</a>
+                      </Link>
+                  </li>
+                  <li>
+                      <Link href="/pagetemplate">
+                          <a>← pagetemplate</a>
+                      </Link>
+                  </li>
+                  <li>
+                      <Link href="/contact">
+                          <a>← Contact</a>
+                      </Link>
+                  </li>
+                </ul>
+           </div>
       </div>
   );
 }
