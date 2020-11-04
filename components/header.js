@@ -1,14 +1,12 @@
-import headerstyle from '../styles/footer.module.css'
+import headerstyle from '../styles/header.module.css'
 import utilStyles from '../styles/utils.module.css'
 
 
 export default function Header({title}) {
   return (
-      <>
-      <p>{}</p>
-      <header className={headerstyle.header}>
+       <div className={headerstyle.header}>
         <h1 className={utilStyles.heading2Xl}>{title}</h1>
-      </header>
-      </>
+      </div>
+
   );
 }

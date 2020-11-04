@@ -1,0 +1,11 @@
+.error {
+    position: fixed;
+    background-color: lightgray;
+    width: 275px;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    overflow-wrap: break-word;
+    margin-top: 0px;
+    padding: 0px;
+}

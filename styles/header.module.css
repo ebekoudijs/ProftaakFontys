@@ -2,4 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 0px;
+  margin-left: 275px;
+  background-color: purple;
+  
 }

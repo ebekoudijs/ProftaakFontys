@@ -1,7 +1,12 @@
 .container {
-  max-width: 36rem;
-  padding: 0 1rem;
-  margin: 0rem auto 0rem; 
+
+}
+
+.header {
+    width: calc(100% - 275px);
+    padding: 0 1rem;
+    margin: 0rem auto 2rem;
+    margin-left: 275px;
 }
 .headerImage {
   width: 6rem;
@@ -16,3 +21,13 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+.contentwrapper {
+width: calc(100% - 275px);
+margin-left: 275px;
+background-color: blue;
+}
+.content {
+
+
+}
+
