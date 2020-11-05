@@ -7,27 +7,27 @@ import Link from 'next/link'
 
 export default function Sidenav() {
   return (
-      <div class={styles.header}>
-          <div class={styles.logo }>
+      <div className={styles.header}>
+          <div className={styles.logo }>
               Insecten bedrijf dingen
           </div>
-          <div class="menu">
+          <div className="menu">
               <Link href="/about">
-              <a class={styles.link}>
-                  <div class={styles.title}>About</div>
-                  <div class={styles.bar}></div>
+              <a className={styles.link}>
+                  <div className={styles.title}>About</div>
+                  <div className={styles.bar}></div>
                   </a>
               </Link>
               <Link href="/contact">
-                  <a class={styles.link}>
-                      <div class={styles.title}>Contact</div>
-                      <div class={styles.bar}></div>
+                  <a className={styles.link}>
+                      <div className={styles.title}>Contact</div>
+                      <div className={styles.bar}></div>
                   </a>
               </Link>
               <Link href="/philipstroep">
-                  <a class={styles.link}>
-                      <div class={styles.title}>Philip's troep</div>
-                      <div class={styles.bar}></div>
+                  <a className={styles.link}>
+                      <div className={styles.title}>Philip's troep</div>
+                      <div className={styles.bar}></div>
                   </a>
               </Link>
           </div>
