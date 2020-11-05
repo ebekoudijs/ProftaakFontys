@@ -12,18 +12,24 @@ export default function Sidenav() {
               Insecten bedrijf dingen
           </div>
           <div class="menu">
-              <a href="#" class={styles.link}>
+              <Link href="/about">
+              <a class={styles.link}>
                   <div class={styles.title}>About</div>
                   <div class={styles.bar}></div>
-              </a>
-              <a href="#" class={styles.link}>
-                  <div class={styles.title}>Work</div>
-                  <div class={styles.bar}></div>
-              </a>
-              <a href="#" class={styles.link}>
-                  <div class={styles.title}>Contact</div>
-                  <div class={styles.bar}></div>
-              </a>
+                  </a>
+              </Link>
+              <Link href="/contact">
+                  <a class={styles.link}>
+                      <div class={styles.title}>Contact</div>
+                      <div class={styles.bar}></div>
+                  </a>
+              </Link>
+              <Link href="/pagetemplate">
+                  <a class={styles.link}>
+                      <div class={styles.title}>Template</div>
+                      <div class={styles.bar}></div>
+                  </a>
+              </Link>
           </div>
       </div>
   );

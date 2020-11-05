@@ -4,18 +4,15 @@
   align-items: center;
   margin-top: 0px;
   align-items: stretch;
-  height: 10rem;
+  height: 6rem;
   position:relative;
 }
-.headercontainer {
-   position: absolute;
-   bottom: 12px;
-   left: 10%;
-}
+
 .header {
     font-size: 3rem;
     line-height: 1.2;
     font-weight: 800;
     letter-spacing: -0.1rem;
     padding: 10px;
+    padding-left: 0px;
 }
