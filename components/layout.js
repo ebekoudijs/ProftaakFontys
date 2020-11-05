@@ -11,42 +11,26 @@ export const filler = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 
 export default function Layout({ children, title, nofooter, noheader, nosidenav, nohome}) {
   return (
-
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />       
         <title>{siteTitle} | {title}</title>
       </Head>
 
-      {!nosidenav ? (
-        <Sidenav />
-        ) :
-              (<></>)}
-          
-          <div className={styles.contentwrapper}>
-              <div className={styles.content}>
-                  {!noheader ? (
-                      <Header title={title} />
-                  ) :
-
-                      (<></>)}
-                  {children}
-                  {!nohome && (
-                      <div className={styles.backToHome}>
-                          <Link href="/">
-                              <a>← Back to home</a>
-                          </Link>
-                      </div>)}
-                </div>
-
- 
-              </div>
-    {!nofooter ? (<Footer />)
-    :
-        (
-
-<></>)
-}
+      {!nosidenav ? (<Sidenav />) : (<></>)}
+      <div className={styles.contentwrapper}>
+        <div className={styles.content}>
+          {!noheader ? (<Header title={title} />) : (<></>)}
+          {children}
+          {!nohome && (
+          <div className={styles.backToHome}>
+            <Link href="/">
+              <a>← Back to home</a>
+            </Link>
+          </div>)}
+        </div>
       </div>
+      {!nofooter ? (<Footer />):(<></>)}
+    </div>
   )
 }
