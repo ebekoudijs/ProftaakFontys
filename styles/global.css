@@ -6,23 +6,23 @@ body {
     line-height: 1.6;
     font-size: 18px;
 }
-
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
-
 a {
     color: #0070f3;
     text-decoration: none;
 }
-
     a:hover {
         text-decoration: underline;
-    }
-
+}
 img {
     max-width: 100%;
     display: block;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
 }
