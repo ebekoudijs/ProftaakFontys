@@ -2,9 +2,6 @@
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-
-
-
 export default function Sidenav() {
   return (
       <div className={styles.header}>
