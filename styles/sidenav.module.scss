@@ -1,9 +1,10 @@
-.navbar {
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+
+.header {
     width: 100%;
     border-bottom: 1px solid black;
     text-align: right;
     position: relative;
-    height: 104px;
 
     .logo {
         position: absolute;
@@ -11,7 +12,7 @@
         left: 0;
         font-size: 32px;
         font-weight: 100;
-        padding: 26px;
+        padding: 23px;
         border-right: 1px solid black;
     }
 }
@@ -45,3 +46,7 @@
         }
     }
 }
+.link:hover {
+    text-decoration: none;
+}
+

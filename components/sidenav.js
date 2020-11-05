@@ -7,22 +7,22 @@ import Link from 'next/link'
 
 export default function Sidenav() {
   return (
-      <div class={styles.navbar}>
-          <div class={styles.logo}>
-              Vieze insecten proftaak
+      <div class={styles.header}>
+          <div class={styles.logo }>
+              Insecten bedrijf dingen
           </div>
           <div class="menu">
               <a href="#" class={styles.link}>
-                  <div class="title">About</div>
-                  <div class="bar"></div>
+                  <div class={styles.title}>About</div>
+                  <div class={styles.bar}></div>
               </a>
               <a href="#" class={styles.link}>
-                  <div class="title">Work</div>
-                  <div class="bar"></div>
+                  <div class={styles.title}>Work</div>
+                  <div class={styles.bar}></div>
               </a>
               <a href="#" class={styles.link}>
-                  <div class="title">Contact</div>
-                  <div class="bar"></div>
+                  <div class={styles.title}>Contact</div>
+                  <div class={styles.bar}></div>
               </a>
           </div>
       </div>

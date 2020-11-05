@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: 0px;
-  margin-left: 275px;
   align-items: stretch;
   height: 10rem;
   position:relative;
@@ -19,12 +18,4 @@
     font-weight: 800;
     letter-spacing: -0.1rem;
     padding: 10px;
-}
-.divider {
-    border-top: 1px solid #e5e5e5;
-    border-radius: 50px;
-    width: 100%;
-    margin: auto;
-    position: absolute;
-    bottom: 0px;
 }

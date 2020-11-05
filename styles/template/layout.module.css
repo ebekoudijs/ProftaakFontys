@@ -3,10 +3,8 @@
 }
 
 .header {
-    width: calc(100% - 275px);
     padding: 0 1rem;
     margin: 0rem auto 2rem;
-    margin-left: 275px;
 }
 .headerImage {
   width: 6rem;
@@ -22,11 +20,10 @@
   margin: 3rem 0 0;
 }
 .contentwrapper {
-width: calc(100% - 275px);
-margin-left: 275px;
+
 }
 .content {
-    margin-left: 10%;
+    margin: auto;
     width: 50%;
     padding: 10px;
 }

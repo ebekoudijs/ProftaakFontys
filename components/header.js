@@ -8,7 +8,6 @@ export default function Header({title}) {
           <div className={headerstyle.headercontainer}>
               <h1 className={headerstyle.header}>{title}</h1>
           </div>
-          <hr className={headerstyle.divider}></hr>
       </div>
 
   );

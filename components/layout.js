@@ -18,15 +18,16 @@ export default function Layout({ children, title, nofooter, noheader, nosidenav,
         <link rel="icon" href="/favicon.ico" />       
         <title>{siteTitle} | {title}</title>
       </Head>
-      {!noheader ? (
-          <Header title={title}/>
-        ):
 
-                      (<></>)}
       {!nosidenav ? (
         <Sidenav />
         ) :
-                  (<></>)}
+              (<></>)}
+          {!noheader ? (
+              <Header title={title} />
+          ) :
+
+              (<></>)}
           
           <div className={styles.contentwrapper}>
               <div className={styles.content }>
