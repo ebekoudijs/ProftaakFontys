@@ -24,9 +24,9 @@ export default function Sidenav() {
                       <div class={styles.bar}></div>
                   </a>
               </Link>
-              <Link href="/pagetemplate">
+              <Link href="/philipstroep">
                   <a class={styles.link}>
-                      <div class={styles.title}>Template</div>
+                      <div class={styles.title}>Philip's troep</div>
                       <div class={styles.bar}></div>
                   </a>
               </Link>
