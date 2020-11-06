@@ -7,7 +7,8 @@ export default function Home() {
     <Layout nohome title={pageTitle}>
       <section className={utilStyles.headingMd}>
         <p>{filler}</p>
-        <p>{filler}</p>
+
+              <p>{filler}</p>
       </section>
     </Layout>
   )

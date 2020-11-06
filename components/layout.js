@@ -31,7 +31,8 @@ export default function Layout({ children, title, nofooter, noheader, nosidenav,
           <div className={styles.backToHome}>
             <Link href="/">
               <a>← Back to home</a>
-            </Link>
+                            </Link>
+                            
           </div>)}
         </div>
       </div>
