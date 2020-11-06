@@ -1,10 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
 
-.header {
+.navbarcontainer {
     width: 100%;
     border-bottom: 1px solid black;
     text-align: right;
     position: relative;
+    color:black;
 
     .logo {
         position: absolute;
@@ -24,10 +25,9 @@
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    color: #0f0f0f;
     font-weight: 800;
     font-size: 24px;
-
+    color: inherit;
     .bar {
         width: 100%;
         display: inline-block;
@@ -48,4 +48,10 @@
 }
 .link:hover {
     text-decoration: none;
+}
+.linkdarkmode {
+    background-color: black;
+    color: white;
+
+
 }

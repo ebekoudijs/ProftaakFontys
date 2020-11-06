@@ -4,13 +4,13 @@ import Link from 'next/link'
 
 export default function Sidenav() {
   return (
-      <div className={styles.header}>
-          <div className={styles.logo }>
+      <div className={styles.navbarcontainer} id="navbarcontainer">
+          <div className={styles.logo}>
               Insecten bedrijf dingen
           </div>
           <div className="menu">
               <Link href="/about">
-              <a className={styles.link}>
+              <a className={styles.link} >
                   <div className={styles.title}>About</div>
                   <div className={styles.bar}></div>
                   </a>

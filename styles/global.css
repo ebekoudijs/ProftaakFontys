@@ -11,12 +11,14 @@ body {
     padding: 0px;
     margin: 0px;
 }
-a {
-    color: #0070f3;
-    text-decoration: none;
+.a {
+    color: #0070f3; 
 }
-    a:hover {
-        text-decoration: underline;
+.a:hover {
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
 }
 img {
     max-width: 100%;
@@ -24,5 +26,5 @@ img {
 }
 .dark-mode {
     background-color: black;
-    color: white;
+    color: white !important;
 }
