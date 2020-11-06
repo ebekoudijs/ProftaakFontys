@@ -1,11 +1,18 @@
-﻿export default function darkmode() {
+﻿import utilStyles from '../styles/utils.module.css'
+
+
+export default function darkmode() {
     return (
-        <p className="darkmodebutton" onClick={function () {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }}> 
-            KLIK VOOR DARKMODE
-        </p>
+        <>
+                <button className={utilStyles.button} onClick={function () {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }} >
+            <h3>Dark mode</h3>
+            
+                </button>
+               
+        </>
     );
 }
 
