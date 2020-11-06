@@ -5,7 +5,7 @@ export default function darkmode() {
     return (
         <>
                 <button className={utilStyles.button} onClick={function () {
-                var element = document.body;
+                var element = document.getElementById("container");
                 var navbar = document.getElementById("navbarcontainer");
                 element.classList.toggle("dark-mode");
                 navbar.classList.toggle("dark-mode");
@@ -18,3 +18,5 @@ export default function darkmode() {
     );
 }
 
+//Cookies om darkmode te onthouden
+//Dark mode tot aan onder de pagina

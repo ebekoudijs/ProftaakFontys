@@ -16,7 +16,7 @@ const DarkMode = dynamic(() => import('../components/darkmode'), {
 export default function Layout({ children, title, nofooter, noheader, nosidenav, nohome}) {
 
     return (
-    <div className={styles.container}>
+    <div className={styles.container} id="container">
       <Head>
         <link rel="icon" href="/favicon.ico" />       
         <title>{siteTitle} | {title}</title>

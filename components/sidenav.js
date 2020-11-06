@@ -6,7 +6,7 @@ export default function Sidenav() {
   return (
       <div className={styles.navbarcontainer} id="navbarcontainer">
           <div className={styles.logo}>
-              Insecten bedrijf dingen
+              Insect Blend
           </div>
           <div className="menu">
               <Link href="/about">
