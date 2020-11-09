@@ -21,9 +21,15 @@ export default function Sidenav() {
                       <div className={styles.bar}></div>
                   </a>
               </Link>
-              <Link href="/philipstroep">
+              <Link href="/calculator">
                   <a className={styles.link}>
-                      <div className={styles.title}>Philip's troep</div>
+                      <div className={styles.title}>calculator</div>
+                      <div className={styles.bar}></div>
+                  </a>
+              </Link>
+              <Link href="/documentatie">
+                  <a className={styles.link}>
+                      <div className={styles.title}>Documentatie</div>
                       <div className={styles.bar}></div>
                   </a>
               </Link>
