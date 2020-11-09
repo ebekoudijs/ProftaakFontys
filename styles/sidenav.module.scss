@@ -5,9 +5,9 @@
     border-bottom: 1px solid black;
     text-align: right;
     position: relative;
-    color:black;
+    color: black;
 
-    .logo {
+    .logodiv {
         position: absolute;
         top: 0;
         left: 0;
@@ -15,9 +15,15 @@
         font-weight: 100;
         padding: 23px;
         border-right: 1px solid black;
+        text-decoration: none;
     }
 }
-
+.logotext {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: inherit;
+}
 .link {
     display: inline-block;
     padding: 15px 0;
@@ -52,6 +58,4 @@
 .linkdarkmode {
     background-color: black;
     color: white;
-
-
 }

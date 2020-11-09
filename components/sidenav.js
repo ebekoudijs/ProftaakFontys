@@ -5,9 +5,11 @@ import Link from 'next/link'
 export default function Sidenav() {
   return (
       <div className={styles.navbarcontainer} id="navbarcontainer">
-          <div className={styles.logo}>
+          <div className={styles.logodiv}>
               <Link href="/">
-                  Insect Blend
+                  <a className={styles.logotext}>
+                      Insect Blend
+                  </a>
               </Link>
           </div>
           <div className="menu">
