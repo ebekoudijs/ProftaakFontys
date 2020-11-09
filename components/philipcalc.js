@@ -45,14 +45,15 @@
 
     return (
         <>
-                <label htmlFor="textHoeveelheid">hoeveelheid vlees in gram: </label>
-                <input type="text" id="textHoeveelheid" name="textHoeveelheid"></input>
-                <br></br>
-                <input type="radio" id="radio1" name="group1" value="15.415"></input>
-                <br />
-                <input id="radio2" type="radio" name="group1" value="5.988"></input>
-                <br />
-                <input id="radio3" type="radio" name="group1" value="4.325"></input>
+            <label htmlFor="textHoeveelheid">hoeveelheid vlees in gram: </label>
+            <input type="text" id="textHoeveelheid" name="textHoeveelheid"></input>
+            <br />
+            <input type="radio" id="radio1" name="group1" value="15.415"></input>
+            <p>Rundvlees</p>
+            <input id="radio2" type="radio" name="group1" value="5.988"></input>
+            <p>Varkensvlees</p>
+            <input id="radio3" type="radio" name="group1" value="4.325"></input>
+            <p>Kip</p>
                 <br />
 
                 <br />
