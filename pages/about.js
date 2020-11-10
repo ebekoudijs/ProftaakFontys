@@ -13,6 +13,7 @@ export default function FirstPost() {
         <Head>
         </Head>
               <section className={utilStyles.headingMd}>
+                  <p>Wij zijn Insectblend, een bedrijf dat zich specialiseert op het vermalen en verwerken van insecten in maaltijden. Hierdoor hopen we de opwarming van de aarde en het verbruik van water te verminderen. Zelf verkopen wij dan ook insecten en blenders gefocust op het vermalen van insecten. Deze blenders komen geleverd met een aantal ingebouwde standen voor normaal eten en voor insecten. </p>
                   <Image
                       src="/images/philip.png"
                       alt="Picture of the author"
