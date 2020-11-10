@@ -9,6 +9,7 @@ export default function Home() {
         <p>{filler}</p>
 
               <p>{filler}</p>
+              <h1>s/o naar Tycho</h1>
       </section>
     </Layout>
   )
