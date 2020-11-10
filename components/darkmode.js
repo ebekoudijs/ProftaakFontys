@@ -56,7 +56,6 @@ export default function darkmode() {
     return (
         <>
             {checkCookie()}
-            {toggleDarkMode() }
             <button className={utilStyles.button} onClick={function () {
                 var cookie = getCookie("darkmode");
                 if (cookie == 'false') {
@@ -76,6 +75,3 @@ export default function darkmode() {
         </>
     );
 }
-
-//Cookies om darkmode te onthouden
-//Dark mode tot aan onder de pagina
