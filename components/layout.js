@@ -37,8 +37,10 @@ export default function Layout({ children, title, nofooter, noheader, nosidenav,
           </div>)}
         </div>
       </div>
-      {!nofooter ? (<Footer />) : (<></>)}
+            {!nofooter ? (<Footer />) : (<></>)}
             <DarkMode />
+            
+            
     </div>
   )
 }

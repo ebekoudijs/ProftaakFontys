@@ -2,6 +2,13 @@
 
 
 export default function darkmode() {
+    function sleep(milliseconds) {
+        const date = Date.now();
+        let currentDate = null;
+        do {
+            currentDate = Date.now();
+        } while (currentDate - date < milliseconds);
+    }
     function getCookie(cname) {
         var name = cname + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
@@ -29,40 +36,43 @@ export default function darkmode() {
         }
         else { setCookie("darkmode", false , 365); }
     }
+    function toggleDarkMode() {
+        var darkmodevalue = getCookie("darkmode");
+        var element = document.body;
+        var contentwrapper = document.getElementById("container")
+        
+        if (darkmodevalue == 'true') {  
+            element.classList.add("dark-mode");
+            console.error(element);
+            console.error(darkmodevalue);
+        }
+        else if (darkmodevalue == 'false') {
+            element.classList.remove("dark-mode");
+            console.error(element);
+            console.error(darkmodevalue);
+        }
+    }
 
     return (
         <>
             {checkCookie()}
+            {toggleDarkMode() }
             <button className={utilStyles.button} onClick={function () {
                 var cookie = getCookie("darkmode");
-                if (cookie == 'false') { setCookie("darkmode", true, 365); }
-                else if (cookie == 'true') { setCookie("darkmode", false, 365); }
+                if (cookie == 'false') {
+                    setCookie("darkmode", true, 365);
+                    toggleDarkMode();
+                }
+                else if (cookie == 'true') {
+                    setCookie("darkmode", false, 365);
+                    toggleDarkMode();
+                }
 
-            }}>
-                <h3>Dark mode cookie</h3>
-            </button>
-
+            }} onLoad={toggleDarkMode() } id="button">
+                <h3 id="Test">Dark mode cookie</h3>
             
-
-
-
-
-
-
-            <button className={utilStyles.button} onClick={function () {
-                var cookie = document.cookie;
-
-
-                var element = document.getElementById("container");
-                var navbar = document.getElementById("navbarcontainer");
-                element.classList.toggle("dark-mode");
-                navbar.classList.toggle("dark-mode");
-                //document.cookie = "darkMode=true; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/"; 
-
-            }} >
-                <h3>Dark mode</h3>
             </button>
-               
+                     
         </>
     );
 }
