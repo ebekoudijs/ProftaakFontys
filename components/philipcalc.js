@@ -5,9 +5,8 @@ export default function philipcalc() {
         var proteValue = 0.0186 * hoeveelheid - vlees * hoeveelheid;
         var water = radioWaarde * hoeveelheid;
         var besparingValue = water - hoeveelheid * 4.341;
-        document.getElementById("result").innerHTML = "Voor de productie van " + "<b>" + hoeveelheid + " gram " + vleestype + "</b>" + " is " + "<b>" + water.toFixed(2) + " liter water " + "</b>" + "nodig."
-            + " Dat is " + "<b>" + besparingValue.toFixed(2) + " liter " + "</b>" +"meer/minder dan bij meelwormen nodig is."
-
+        document.getElementById("result").innerHTML = "Voor de productie van " + "<b>" + hoeveelheid + " gram " + vleestype + "</b>" + " is " + "<b>" + water.toFixed(2) +
+            " liter water " + "</b>" + "nodig." + " Dat is " + "<b>" + besparingValue.toFixed(2) + " liter " + "</b>" +"meer/minder dan bij meelwormen nodig is."
             + " Ook zit er " + "<b>" + proteValue.toFixed(2) + " gram proteïne " + "</b>" + "meer in meelwormen dan in " + vleestype + " bij deze hoeveelheid.";
     }
     function vleesSelect() {
@@ -50,7 +49,6 @@ export default function philipcalc() {
                 <p> Bereken </p>
             </button>
             <p id="result"></p>
-            <p id ="test" />
         </>
     );
 }
