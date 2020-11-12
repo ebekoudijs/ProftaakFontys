@@ -44,7 +44,7 @@ export default function Layout({ children, title, nofooter, noheader, nosidenav,
     </div>
   )
 }
-
+//<DarkMode />
 //IDs toevoegen aan de components
 //Get element by ID op components
 //Dark mode class toevoegen aan de components
