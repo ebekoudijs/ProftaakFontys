@@ -1,7 +1,5 @@
-import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import Layout, {filler} from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
 const pageTitle = "Calculator"
 
 const Philipcalc = dynamic(() => import('../components/philipcalc'), {
@@ -9,7 +7,7 @@ const Philipcalc = dynamic(() => import('../components/philipcalc'), {
 })
 
 
-export default function FirstPost() {
+export default function Calculator() {
     return (
 
           <Layout title={pageTitle}>
