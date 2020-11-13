@@ -37,7 +37,6 @@ export default function FirstPost() {
                   <div className={styles.column}>
                       <Image
                           quality={100}
-                          layout="fill"
                           src="/images/R-3.png"
                           alt="Picture of the author"
                           width={420}
