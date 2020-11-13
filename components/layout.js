@@ -32,7 +32,7 @@ export default function Layout({ children, title, nofooter, noheader, nosidenav,
           {!nohome && (
           <div className={styles.backToHome}>
             <Link href="/">
-              <a>← Back to home</a>
+              <a>← Terug naar home</a>
             </Link>             
           </div>)}
         </div>
