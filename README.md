@@ -8,7 +8,7 @@ Om de website te hosten:
 
 -installeer react via "npm install next react react-dom"
 
--installeer sass support via "npm install sass"
+-installeer sass support via "npm install sass" (nodig voor de gebruikte navbar)
 
 -navigeer naar de folder waar je de github repo heen hebt gecloned
 
