@@ -8,8 +8,8 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 const httpsOptions = {
-    key: fs.readFileSync('./certificates/localhost.key'),
-    cert: fs.readFileSync('./certificates/localhost.crt')
+    key: fs.readFileSync('/etc/letsencrypt/live/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/fullchain.pem')
 };
 
 app.prepare().then(() => {
@@ -19,6 +19,6 @@ app.prepare().then(() => {
 
     }).listen(80, err => {
         if (err) throw err;
-        console.log('> Ready on https://localhost:3000');
+        console.log('> Ready on https://localhost:443');
     });
 });
