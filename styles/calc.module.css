@@ -1,0 +1,11 @@
+.calcwrapper {
+
+}
+.radiospan {
+    padding-left: 15px;
+}
+.amountinput {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
+}
