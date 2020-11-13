@@ -25,6 +25,13 @@ export default function Sidenav() {
                       <div className={styles.bar}></div>
                   </a>
               </Link>
+              <Link href="/product">
+                  <a className={styles.link}>
+                      <div className={styles.title}>Het product</div>
+                      <div className={styles.bar}></div>
+                  </a>
+              </Link>
+
               <Link href="/calculator">
                   <a className={styles.link}>
                       <div className={styles.title}>calculator</div>
