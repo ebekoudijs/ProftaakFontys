@@ -1,4 +1,4 @@
-﻿const { createServer } = require('http');
+﻿const { createServer } = require('https');
 const { parse } = require('url');
 const next = require('next');
 const fs = require('fs');
@@ -16,8 +16,7 @@ app.prepare().then(() => {
     createServer(httpsOptions, (req, res) => {
         const parsedUrl = parse(req.url, true);
         handle(req, res, parsedUrl);
-
-    }).listen(80, err => {
+    }).listen(443, err => {
         if (err) throw err;
         console.log('> Ready on https://localhost:443');
     });
