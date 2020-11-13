@@ -94,9 +94,10 @@
     margin-top: 3rem;
 }
 
-.button {
-    margin: 1rem;
+.button {   
     flex-basis: 45%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     padding: 1rem;
     text-align: left;
     background-color: inherit;
