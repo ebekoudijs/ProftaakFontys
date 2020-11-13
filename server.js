@@ -8,8 +8,8 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 const httpsOptions = {
-    key: fs.readFileSync('/etc/letsencrypt/live/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/fullchain.pem')
+    key: fs.readFileSync('/etc/letsencrypt/live/insectblend.nl/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/insectblend.nl/fullchain.pem')
 };
 
 app.prepare().then(() => {
