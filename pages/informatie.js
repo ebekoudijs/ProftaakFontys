@@ -16,8 +16,8 @@ export default function FirstPost() {
                       <Image
                           quality={100}
                      className={styles.grafiek}
-                     src="/images/R-1.png"
-                     alt="Picture of the author"
+                     src="/images/R-goeie1.png"
+                     alt="Grafiek 1"
                      width={420}
                      height={267}
                     />
@@ -26,8 +26,8 @@ export default function FirstPost() {
                       <Image
                           quality={100}
                           className={styles.grafiek}
-                          src="/images/R-2.png"
-                          alt="Picture of the author"
+                          src="/images/R-goeie2.png"
+                          alt="Grafiek2"
                           width={420}
                           height={266}
                       />
@@ -37,8 +37,8 @@ export default function FirstPost() {
                   <div className={styles.column}>
                       <Image
                           quality={100}
-                          src="/images/R-3.png"
-                          alt="Picture of the author"
+                          src="/images/R-goeie3.png"
+                          alt="Grafiek 3"
                           width={420}
                           height={267}
                       />
@@ -48,7 +48,7 @@ export default function FirstPost() {
                           quality={100}
                           className={styles.grafiek}
                           src="/images/R-4.png"
-                          alt="Picture of the author"
+                          alt="Grafiek 4"
                           width={420}
                           height={264}
                       />
@@ -60,7 +60,7 @@ export default function FirstPost() {
                           quality={100}
                           className={styles.grafiek}
                           src="/images/R-5.png"
-                          alt="Picture of the author"
+                          alt="Grafiek 5"
                           width={420}
                           height={263}
                       />
@@ -70,13 +70,11 @@ export default function FirstPost() {
                           quality={100}
                           className={styles.grafiek}
                           src="/images/R-6.png"
-                          alt="Picture of the author"
+                          alt="Grafiek 6"
                           width={420}
                           height={264}
                       />
                   </div>
-
-
                   </div>
       </Layout> 
     </>
