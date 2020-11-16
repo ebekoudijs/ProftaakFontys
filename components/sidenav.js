@@ -13,12 +13,6 @@ export default function Sidenav() {
               </Link>
           </div>
           <div className="menu">
-              <Link href="/about">
-              <a className={styles.link} >
-                  <div className={styles.title}>Over ons</div>
-                  <div className={styles.bar}></div>
-                  </a>
-              </Link>
               <Link href="/informatie">
                   <a className={styles.link}>
                       <div className={styles.title}>Informatie</div>
