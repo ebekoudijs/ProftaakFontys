@@ -45,7 +45,7 @@ export default function FirstPost() {
                       />
                   </div>
               </div>
-              <p>Wanneer klanten bij ons een product bestellen vragen wij hen om een enquete in te vullen met de hoeveelheid vlees en insecten die ze gemiddeld per week eten. Na een maand vragen we weer om deze enquete in te vullen. Hier zijn de volgende resultaten uit gekomen:</p>
+              <p>Wanneer klanten bij ons een product bestellen vragen wij hen om een enquete in te vullen met de hoeveelheid vlees en insecten die ze gemiddeld per week eten. Na een maand vragen we ze weer om deze enquete in te vullen. Hier zijn de volgende resultaten uit gekomen:</p>
               <div className={styles.row}>
                   <div className={styles.column}>
                       <Image
