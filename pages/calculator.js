@@ -15,4 +15,3 @@ export default function Calculator() {
             </Layout> 
   )
 }
-//<button onClick={vleesSelect() }>bereken</button>
