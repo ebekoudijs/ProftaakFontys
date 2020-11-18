@@ -9,7 +9,7 @@ const pageTitle = "Home"
 export default function FirstPost() {
     return (
         <>
-            <Layout title={pageTitle}>
+            <Layout title={pageTitle} nohome>
                 <Head>
                 </Head>
                 <section className={utilStyles.headingMd}>
